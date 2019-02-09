@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <td style="width:50%; font-size:20px">Name</td>
+    <td style="width:50%; font-size:20px">Price</td>
+  </tr>
+  <% @menus.each do |menu| %>
+    <tr>
+      <td style="font-size:20px"><%= menu.food_name %></td>
+      <td style="font-size:20px"><%= menu.price %></td>
+    </tr>
+  <% end %>
+</table>
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>

@@ -1,0 +1,28 @@
+
+
+<p>
+  <strong>Food name:</strong>
+  <%= @menu.food_name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @menu.price %>
+</p>
+
+<p>
+  <strong>Category ID</strong>
+  <%= @menu.category.name %>
+</p>
+
+<!--<p>-->
+<!--  <strong>Image:</strong>-->
+<!--  <%#= image_tag @menu.image.variant(resize: "100x100") %>-->
+<!--</p>-->
+
+
+
+<%= link_to 'Edit', edit_menu_path(@menu) %> |
+<%= link_to 'Back', menus_path %> |
+<%#= link_to 'Delete', menu, method: :delete, data: { confirm: 'Are you sure?' } %>
+
